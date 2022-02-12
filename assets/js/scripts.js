@@ -22,8 +22,8 @@ var texts = [
   "Always code as if the person who ends up maintaining your code will be a violent psychopath who knows where you live",
   "Think like a proton. Always positive.",
   "The question isn’t who is going to let me, it’s who is going to stop me.",
-  "Nothing is impossible, the word itself says “I’m possible!",
-  "Honest criticism is hard to take, particularly from a relative, a friend, an acquaintance, or a stranger."
+  "“Everything you can imagine is real.” —Pablo Picasso",
+  "Imagination is the beginning of creation. You imagine what you desire, you will what you imagine, and at last, you create what you will.” —George Bernard Shaw"
 
 ];
 var randomText = Math.floor(Math.random() * texts.length);
