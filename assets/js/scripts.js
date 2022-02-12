@@ -1,5 +1,5 @@
 //Countdown timer
-var countDownDate = new Date("Jan 1, 2022 00:00:00").getTime();
+var countDownDate = new Date("March 1, 2022 00:00:00").getTime();
 var x = setInterval(function() {
   var now = new Date().getTime();
   var distance = countDownDate - now;
@@ -11,15 +11,15 @@ var x = setInterval(function() {
   + minutes + "minutes " + seconds + "seconds ";
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "Happy new year!";
+    document.getElementById("countdown").innerHTML = "Coming Soon!";
   }
 }, 1000);
 
 //randomized text
 var texts = [
-  "I am so clever that sometimes I don’t understand a single word of what I am saying.",
-  "You can’t have everything. Where would you put it?",
-  "I didn’t fail the test. I just found 100 ways to do it wrong",
+  "Programming is like sex: One mistake and you have to support it for the rest of your life.",
+  "Copy-and-Paste was programmed by programmers for programmers actually",
+  "Always code as if the person who ends up maintaining your code will be a violent psychopath who knows where you live",
   "Think like a proton. Always positive.",
   "The question isn’t who is going to let me, it’s who is going to stop me.",
   "Nothing is impossible, the word itself says “I’m possible!",
@@ -31,7 +31,7 @@ document.getElementById('parsedtext').innerHTML = texts[randomText];
 
 
 //scrolling title
-title = "NoError Studio™️";
+title = "NoError™️";
 position = 0;
 function scrolltitle() {
     document.title = title.substring(position, title.length) + title.substring(0, position); 

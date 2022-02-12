@@ -90,5 +90,5 @@ var _parallax_star_opacity =            1; // [0.1 to 1] - parallax star opacity
 // --------------------------------------------------
 //
 
-var _bg_effect_star_color =             'rgba(255, 0, 69, 0.9)';// rgba format - star color
+var _bg_effect_star_color =             'rgba(68, 0, 255)';// rgba format - star color
 var _bg_effect_star_width =             2.8; // px - star width
