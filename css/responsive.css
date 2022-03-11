@@ -1,655 +1,789 @@
-.navbar-toggler:not(:disabled):not(.disabled) {
-    cursor: pointer;
-    background: none;
-}
-
-#index2 .navbar-light .navbar-toggler {
-    color: #fff;
-    outline: 0;
-}
-
-#index3 .navbar-light .navbar-toggler,
-#index4 .navbar-light .navbar-toggler {
-    color: #fff;
-    outline: 0;
-}
-
-.navbar-light .navbar-toggler {
-    color: #fff;
-    outline: 0;
-}
-
-.navbar-toggler i {
-    font-size: 28px;
-}
-
-.nav-bg i {
-    color: #fff;
-}
-
-.navbar-toggler {
-    border: none;
-}
-
 @media(max-width:991px) {
-    .navbar-light .navbar-nav .nav-link {
-        margin: 18px;
-        color: #fff;
-        line-height: 0;
+
+    .mobile-content-hide,
+    .account-icon,
+    .game-line::after,
+    .gl-one,
+    .gl-two {
+        display: none;
+    }
+
+    .gl-one,
+    .gl-two {
+        animation: none;
     }
 
     .nav-bg {
-        padding-left: 12px;
+        padding: 20px 0;
     }
 
-    .menu-item {
-        background: #161616;
-        text-align: center;
-        padding: 15px 0;
+    .nav-bg.navbar-light .navbar-brand {
+        padding-left: 15px;
     }
 
-    .navbar::after {
-        display: none;
+    .nav-bg .menu-icon i {
+        margin-right: 15px;
     }
 
-    .navbar-light .navbar-brand {
-        color: #fff;
+    .custom-menubar ul {
+        top: 20%;
     }
 
-    .navbar-light .navbar-brand:hover {
-        color: #fff;
+    .custom-menubar ul li {
+        margin: 8px 0;
     }
 
-    .nav-bg .navbar-brand:hover {
-        color: #fff;
+    .custom-menubar .nav-link-block li {
+        display: block;
     }
 
-    .nav-bg .navbar-brand {
-        color: #fff;
+    .menu-close a i {
+        font-size: 21px;
+        width: 40px;
+        height: 40px;
+        right: 10px;
+        top: 20px;
+        line-height: 40px;
     }
 
-    .navbar-light .navbar-nav .nav-link.active::after {
-        opacity: 0;
+    .responsive-nav {
+        display: block;
+        top: 93% !important;
     }
 
-    .navbar-light .navbar-nav .nav-link:hover:after {
-        opacity: 0;
+    .responsive-nav li {
+        margin: 0 10px;
     }
 
-    .nav-bg .bor {
-        background: none;
-    }
-
-    .menu-item .bor {
-        color: #fff0a9
-;
-    }
-
-    .bor::after {
-        display: none;
+    .index3 #banner {
+        -webkit-animation: none;
+        animation: none;
     }
 }
 
-
 @media(max-width:575px) {
+    h2 span {
+        font-size: 38px;
+        letter-spacing: 20px;
+    }
 
-    .dropboxx,
-    .dropboxx2 {
-        font-size: 15px;
+    .banner-arrow,
+    .follow-us,
+    #banner .vid-btn i,
+    .video-txt-overlay,
+    .join-img img,
+    .join-txt p {
+        display: none;
+    }
+
+    .nav-bg {
+        padding: 20px 0;
+    }
+
+    .nav-bg.navbar-light .navbar-brand {
+        padding-left: 15px;
+    }
+
+    .nav-bg .menu-icon i {
+        margin-right: 15px;
+    }
+
+    .custom-menubar ul {
+        top: 20%;
+    }
+
+    .custom-menubar ul li {
+        margin: 8px 0;
+    }
+
+    .custom-menubar .nav-link-block li {
+        display: block;
+    }
+
+    .menu-close a i {
+        font-size: 21px;
+        width: 40px;
+        height: 40px;
+        right: 10px;
+        top: 20px;
+        line-height: 40px;
+    }
+
+    .responsive-nav {
+        display: block;
+        top: 93% !important;
+    }
+
+    .responsive-nav li {
+        margin: 0 10px;
+    }
+
+    #search input[type="search"] {
+        font-size: 50px;
+    }
+
+    .cart-item {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .cart-img img {
+        width: 150px;
+    }
+
+    .cart-item a i {
+        top: 30px;
+        right: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+
+    .modal-body {
+        padding: 0 30px 30px;
+    }
+
+    .modal-title {
+        padding-left: 0;
+    }
+
+    .modal-header .close {
+        top: 24px;
+        right: 5px;
+    }
+
+    .cart-item h3 {
+        padding-top: 0;
+        padding-bottom: 10px;
     }
 
     #banner {
-        padding: 140px 0 40px;
+        padding: 120px 0 260px;
+        text-align: center;
     }
 
     .banner-txt h3 {
-        font-size: 33px;
+        font-size: 65px;
+        margin-top: 0;
     }
 
-    .banner-txt {
-        padding-bottom: 60px;
+    .banner-txt p {
+        padding: 30px 0 30px 0;
     }
 
-    #banner::before,
-    .mob-hide,
-    .mob-img-hide,
-    #team::before,
-    #team::after,
-    #review::after,
-    .design-layer {
+    .banner-img img {
+        top: 355px;
+        right: 0;
+    }
+
+    .banner-img::after {
+        top: 460px;
+        left: 50%;
+        width: 260px;
+        height: 260px;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+
+    .banner-img::before {
         display: none;
     }
 
-    .design-layer::after {
-        top: 690px;
-        right: -35px;
+    #games {
+        padding: 30px 0;
     }
 
-    .design-layer::before {
-        top: 730px;
-        right: -35px;
+    .game-item img {
+        display: inline-block;
+        width: 100%;
     }
 
-    .unique-style:before,
-    .unique-style2:before,
-    .unique-style:after,
-    .unique-style2:after {
-        display: none;
-    }
-
-    .unique-style3::after {
-        top: -5px;
-    }
-
-    .unique-style3::before {
-        top: -12px;
-    }
-
-    .over-item {
-        text-align: center !important;
-        padding: 35px 14px;
-    }
-
-    .txt-right p {
-        padding-left: 0;
-    }
-
-    .txt-left p {
-        padding-right: 0;
+    .game-box {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 55px;
     }
 
     #about {
-        padding: 80px 0;
+        padding: 65px 0;
     }
 
-    .about-pa {
-        padding-top: 0;
-    }
-
-    .about-txt h3 {
-        font-size: 24px;
-    }
-
-    #gallery {
-        padding: 60px 0;
-    }
-
-    .gallery-img {
-        text-align: center;
-    }
-
-    .mob-mar-top,
-    .g-mar {
-        margin-top: 30px;
-    }
-
-    #product {
-        padding: 60px 0;
-    }
-
-    .product-pa {
-        padding-top: 110px;
-        padding-bottom: 70px;
-    }
-
-    .product-txt h3 {
-        font-size: 30px;
-    }
-
-    .mob-mar-bottom {
-        margin-bottom: 30px;
-    }
-
-    #team {
-        padding: 60px 0;
-    }
-
-    .team-pa {
-        padding-top: 65px;
-    }
-
-    .team-item {
-        padding-top: 45px;
-    }
-
-    #price,
-    #review,
-    #contact,
-    #blog {
-        padding: 60px 0;
-    }
-
-    .review-item {
-        background: none;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-        padding-top: 0;
-    }
-
-    .comment {
-        padding-right: 0;
-        padding-left: 0;
-    }
-
-    .user {
-        padding: 30px 0 0;
-    }
-
-    .user-txt h3 {
-        padding-top: 25px;
-    }
-
-    .card-body {
-        padding: 26px 28px;
-    }
-
-    .zom {
-        padding-left: 0;
-    }
-
-    .mobile-space {
-        padding-top: 45px;
-    }
-
-    .tags {
-        padding-top: 40px;
-    }
-
-    .tags a {
-        padding: 10px 14px;
-    }
-
-    .blog-text {
-        padding-top: 45px;
-    }
-
-    .sub-main {
-        border-radius: 2px;
-    }
-
-    .sub-main h3 {
-        padding-left: 0px;
-        font-size: 21px;
-        text-align: center;
-        padding-bottom: 30px;
-    }
-
-    .sub-main a {
-        background: white;
-        padding: 14px 20px;
-        font-size: 16px;
-        margin-left: 10px;
-    }
-
-    .subscripe-btn {
-        text-align: center;
-    }
-
-    .links h3 {
-        padding-top: 40px;
-    }
-
-    .fop-btm h2 {
-        line-height: 26px;
-    }
-
-}
-
-@media(min-width:480px) and (max-width:575px) {
-    .sub-main h3 {
-        font-size: 25px;
-    }
-
-    .price-table p {
-        padding-left: 0;
-        text-align: center;
-        font-size: 18px;
-    }
-
-}
-
-@media(min-width:576px) and (max-width:767px) {
-
-    #banner {
-        padding: 145px 0 100px;
-    }
-
-    .banner-txt {
-        padding-bottom: 55px;
-    }
-
-    #banner::before {
-        display: none;
-    }
-
-    .over-item p {
-        font-size: 16px;
-    }
-
-    .design-layer::before {
-        top: 765px;
-    }
-
-    .design-layer::after {
-        top: 717px;
-    }
-
-    .over-item {
-        padding: 30px 25px;
-    }
-
-    .over-item h3 {
-        font-size: 23px;
-    }
-
-    .unique-style:before,
-    .unique-style2:before,
-    .unique-style:after,
-    .unique-style2:after {
-        display: none;
-    }
-
-    #about {
-        padding: 60px 0;
-    }
-
-    .about-item,
-    .about-txt {
-        padding-top: 75px;
-    }
-
-    .counter-1 span {
-        font-size: 16px;
-    }
-
-    .sm-hide {
-        display: none;
-    }
-
-    .sm-reduce-pa {
-        padding-top: 30px;
-    }
-
-    .sm-gallery-top,
-    .sm-gallery-top2 {
-        margin-top: -190px;
-    }
-
-    #product {
-        padding: 50px 0;
-    }
-
-    .mob-img-hide {
-        display: none;
-    }
-
-    .product-pa {
-        padding-top: 60px;
-        padding-bottom: 70px;
-    }
-
-    .product-item {
-        margin-top: 30px;
-    }
-
-    #price {
-        padding: 50px 0;
-    }
-
-    .team-item h3 {
-        font-size: 22px;
-    }
-
-    #team::after {
-        top: 475px;
-        left: -49px;
-        height: 125px;
-    }
-
-    #team::before {
-        top: 510px;
-        left: -49px;
-        height: 125px;
-    }
-
-    .team-item img {
-        border: 4px solid #fff0a9
+    .heading h3::before {
+        left: 50%;
+        border: 2px solid #1338BE
 ;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
     }
 
-    .price-pa {
-        padding-top: 60px;
+    .heading h3 {
+        font-size: 85px;
+        text-align: center;
     }
 
-    .price-table {
-        margin-top: 30px;
+    .about-pt {
+        padding-top: 50px;
     }
 
-    #review::after {
-        display: none;
-    }
-
-    .mobile-space {
+    .about-txt {
+        padding-left: 0;
+        text-align: center;
         margin-top: 50px;
     }
 
-    #blog {
-        padding: 60px 0;
-    }
-
-    .blog-item-txt h3 {
-        font-size: 22px;
-    }
-
-    .blog-text {
-        margin-top: 45px;
-    }
-
-    .tags {
-        padding-top: 45px;
-    }
-
-    .sub-main h3 {
-        padding-left: 0;
-        text-align: center;
-        padding-bottom: 30px;
-    }
-
-    .subscripe-btn {
-        text-align: center;
-    }
-
-    .sub-main a {
-        padding: 15px 20px;
-        font-size: 16px;
-    }
-
-    .links h3 {
-        font-size: 19px;
-    }
-
-    .footer-social {
-        padding-bottom: 35px;
-    }
-
-    #footer {
-        padding: 120px 0 80px;
-    }
-
-}
-
-@media(min-width:768px) and (max-width:991px) {
-    #banner {
-        padding: 155px 0 100px;
-    }
-
-    #banner::before {
-        display: none;
-    }
-
-    .design-layer::before {
-        top: 685px;
-    }
-
-    .design-layer::after {
-        top: 727px;
-    }
-
-    .unique-style:before,
-    .unique-style2:before,
-    .unique-style:after,
-    .unique-style2:after {
-        display: none;
-    }
-
-    .over-item {
-        padding: 35px 24px;
-    }
-
     .about-txt h3 {
-        font-size: 21px;
-    }
-
-    .counter-1 span {
-        font-size: 13px;
-    }
-
-    .ai-two::after {
-        right: 9px;
+        font-size: 27px;
+        padding: 10px 0 25px;
+        line-height: 45px;
     }
 
     .about-txt p {
-        padding-bottom: 45px;
+        padding-right: 0;
     }
 
-    .tab-hider,
-    .tab-view-hide {
-        display: none;
+    #counter {
+        padding: 40px 0 0;
     }
 
-    .sp-img {
-        height: 240px;
+    .match-logo {
+        padding-bottom: 25px;
     }
 
-    .product-pa {
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
-
-    .product-item {
-        margin-top: 50px;
-    }
-
-    #team::before {
-        top: 530px;
-    }
-
-    #team::after {
-        top: 488px;
-    }
-
-    .price-pa {
-        padding-top: 55px;
-    }
-
-    .price-table {
-        margin-top: 35px;
-    }
-
-    #review::after {
-        display: none;
-    }
-
-    .mobile-space {
-        padding-top: 60px;
-    }
-
-    #blog {
-        padding: 60px 0;
-    }
-
-    .blog-text {
-        padding-top: 45px;
-    }
-
-    .footer-social {
-        padding-top: 11px;
-        padding-bottom: 40px;
-    }
-
-    .links h3 {
+    .match-text h3 {
         font-size: 19px;
     }
 
+    .live-match-item .match-text {
+        margin-top: 18px;
+    }
+
+    .pre-match h3 {
+        font-size: 20px;
+        letter-spacing: 6px;
+    }
+
+    .pre-match {
+        margin-top: 45px;
+    }
+
+    .match-item {
+        margin-top: 30px;
+        padding: 25px 0;
+    }
+
+    .vs-txt h3 {
+        padding-bottom: 23px;
+    }
+
+    #watch {
+        padding: 20px 0;
+    }
+
+    .video-overlay a i {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 15px;
+    }
+
+    #watch,
+    #join {
+        padding: 0;
+    }
+
+    #brand {
+        padding: 60px 0 40px;
+    }
+
+    #player .heading h3 {
+        padding-bottom: 25px;
+    }
+
+    .player-pa2 {
+        padding-top: 40px;
+    }
+
+    .player-pa {
+        padding-top: 50px;
+    }
+
+    .player-txt h3 {
+        font-size: 28px;
+        padding: 5px 0 0 0;
+        text-align: center;
+        line-height: 42px;
+    }
+
+    .player-txt h4 {
+        padding-top: 35px;
+    }
+
+    #product {
+        padding: 80px 0 70px;
+    }
+
+    .join-bg {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .join-txt h3 {
+        font-size: 29px;
+        padding: 9px 0 40px;
+    }
+
+    .join-txt span {
+        font-size: 12px;
+    }
+
+    #blog .heading h3 {
+        padding-bottom: 15px;
+    }
+
+    .blog-pa {
+        padding-top: 65px;
+    }
+
+    #subscribe {
+        padding: 70px 0 110px;
+    }
+
+    .subscribe-txt {
+        text-align: center;
+    }
+
+    .subscribe-txt h3 {
+        font-size: 31px;
+    }
+
     #footer {
-        padding: 115px 0 75px;
+        padding: 60px 0;
+    }
+
+    .footer-logo p {
+        padding-right: 0;
+    }
+
+    .footer-menu h3 {
+        margin-top: 30px;
+    }
+
+    .copy-right-txt p {
+        font-size: 18px;
+    }
+
+    .copy-right-txt {
+        text-align: left !important;
+        padding-top: 5px;
+
+    }
+
+    #copy_right::after {
+        width: 100%;
+    }
+
+    .inner-page .checkout-box {
+        padding: 40px 30px;
+    }
+}
+
+@media(min-width:375px) and (max-width:575px) {
+    #banner {
+        padding: 130px 0 360px;
+    }
+
+    .banner-img img {
+        top: 335px;
+        right: 0;
+    }
+
+    .about-txt h3 {
+        font-size: 31px;
+    }
+}
+
+@media(min-width:574px) and (max-width:575px) {
+    .game-box p {
+        padding: 0 30px 35px;
+    }
+
+    .blog-item img {
+        width: 100%;
+    }
+
+    .player-txt h3 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+}
+
+@media(min-width:576px) and (max-width:767px) {
+    .custom-menubar .menu-link {
+        font-size: 32px;
+    }
+
+    .banner-arrow,
+    .follow-us,
+    .vid-btn i,
+    .landscape-hide,
+    .video-txt-overlay,
+    .join-img img {
+        display: none;
+    }
+
+    .landscape-m-auto {
+        margin: 0 auto;
+    }
+
+    .banner-img img {
+        top: 410px;
+        right: 0;
+    }
+
+    #banner {
+        padding: 140px 0 345px;
+    }
+
+    .banner-txt p {
+        padding: 30px 20px 40px 20px;
+    }
+
+    .banner-item {
+        text-align: center;
+    }
+
+    .banner-img::after {
+        top: 535px;
+        left: 50%;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+
+    .banner-img::before {
+        top: 510px;
+        left: 35px;
+    }
+
+    .banner-txt p {
+        padding: 30px 20px 40px 20px;
+    }
+
+    #games {
+        padding: 20px 0;
+    }
+
+    .game-box {
+        margin-top: 60px;
+        background: #191919;
+        padding: 40px;
+        margin-bottom: 50px;
+    }
+
+    .game-box p {
+        padding-right: 55px;
+    }
+
+    .about-txt {
+        padding-left: 0;
+        margin-top: 35px;
+    }
+
+    .about-txt h3 {
+        font-size: 32px;
+    }
+
+    #counter {
+        padding: 0 0 20px;
+    }
+
+    .counter-item {
+        margin-top: 30px;
+    }
+
+    .match-text h3 {
+        font-size: 32px;
+    }
+
+    #watch {
+        padding: 20px 0 0;
+    }
+
+    .video-overlay a i {
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+    }
+
+    #join {
+        padding: 0;
+    }
+
+    #brand {
+        padding: 70px 0 30px;
+    }
+
+    .player-item img {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+    }
+
+    .player-txt h3 {
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .player-txt span,
+    .player-txt h4 {
+        font-size: 54px;
+    }
+
+    .player-info {
+        opacity: 1;
+        width: 74%;
+        height: 55px;
+    }
+
+    .player-info h3 {
+        font-size: 21px;
+        line-height: 55px;
+    }
+
+    .player-txt h3 {
+        padding-bottom: 30px;
+    }
+
+    .join-bg {
+        padding: 70px 45px;
+    }
+
+    .join-txt h3 {
+        font-size: 32px;
+    }
+
+    .subscribe-txt {
+        text-align: center;
+    }
+
+    #subscribe {
+        padding: 60px 0 115px;
+    }
+
+    .footer-menu h3 {
+        margin-top: 40px;
+    }
+
+    #copy_right::after {
+        width: 100%;
+    }
+
+}
+
+
+@media(min-width:768px) and (max-width:991px) {
+
+    .banner-arrow,
+    .vid-btn i,
+    .follow-us,
+    .tablet-hide,
+    .join-img img {
+        display: none;
+    }
+
+    .tab-m-auto {
+        margin: 0 auto;
+    }
+
+    #banner {
+        padding: 130px 0 350px;
+    }
+
+    .banner-txt p {
+        padding: 30px 90px 40px 90px;
+    }
+
+    .banner-img img {
+        top: 415px;
+        right: 0;
+    }
+
+    .banner-img::after {
+        top: 560px;
+        left: 50%;
+        width: 350px;
+        height: 350px;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+
+    .banner-img::before {
+        top: 530px;
+        left: 25px;
+    }
+
+    .banner-item {
+        text-align: center;
+    }
+
+    #games {
+        padding: 30px 0 40px;
+    }
+
+    .game-box {
+        margin-top: 60px;
+        background: #191919;
+        padding: 50px 40px;
+        margin-bottom: 50px;
+    }
+
+    .game-box p {
+        padding-right: 65px;
+    }
+
+    .game-item img {
+        display: inline-block;
+        width: 100%;
+    }
+
+    #about {
+        padding: 50px 0;
+    }
+
+    .about-txt {
+        margin-top: 50px;
+    }
+
+    .counter-item {
+        margin-top: 30px;
+    }
+
+    #watch {
+        padding: 30px 0;
+    }
+
+    .video-txt-overlay {
+        bottom: -20px;
+        left: 10px;
+    }
+
+    .player-item img {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+    }
+
+    .player-info {
+        opacity: 1;
+    }
+
+    .player-txt {
+        text-align: center;
+    }
+
+    .player-txt h3 {
+        padding: 5px 90px 15px 90px;
+    }
+
+    .sale {
+        right: 65px;
+    }
+
+    .join-txt p {
+        padding-right: 99px;
+    }
+
+    #join {
+        padding: 20px 0;
+    }
+
+    .join-bg {
+        margin: 20px 0 0;
+    }
+
+    .subscribe-txt h3 {
+        font-size: 30px;
+        line-height: 46px;
+    }
+
+    .footer-menu h3 {
+        margin-top: 45px;
+    }
+
+    #copy_right::after {
+        width: 100%;
+        height: 2px;
     }
 }
 
 @media(min-width:992px) and (max-width:1199px) {
-    #banner::before {
-        display: none;
+    .custom-menubar .menu-link {
+        font-size: 42px;
     }
 
-    .sp-img {
-        height: 277px;
+    .custom-menubar ul li {
+        margin: 0 25px;
     }
 
-    .sp-img2 {
-        height: 286px;
+    #banner {
+        padding: 200px 0 80px;
     }
 
-    .unique-style:before,
-    .unique-style2:before,
-    .unique-style:after,
-    .unique-style2:after {
-        display: none;
+    .banner-txt h3 {
+        font-size: 87px;
     }
 
-    #product {
-        padding: 65px 0;
+    .banner-img::after {
+        left: 85px;
     }
 
-    .stars i {
-        font-size: 12px;
+    .banner-img::before {
+        top: -30px;
+        left: 85px;
     }
 
-    #team::before {
-        top: 600px;
-
+    .follow-us {
+        position: absolute;
+        left: -95px;
+        z-index: 11;
     }
 
-    #team::after {
-        top: 562px;
+    .vid-btn i {
+        bottom: 35px;
     }
 
-    .price-table p {
-        padding-bottom: 15px;
+    .about-txt h3 {
+        font-size: 32px;
+        line-height: 46px;
+    }
+
+    .match-text h3 {
+        font-size: 21px;
+    }
+
+    .player-txt h3 {
+        font-size: 35px;
+        padding: 10px 40px 0 0;
+    }
+
+    .join-txt h3 {
+        font-size: 33px;
+    }
+
+    .blog-txt a {
+        font-size: 24px;
+    }
+
+    .subscribe-txt h3 {
+        font-size: 30px;
         padding-left: 20px;
     }
 
-    #review::after {
-        display: none;
-    }
-
-    .tags a {
-        padding: 12px 15px;
-    }
-
-    .blog-item-txt {
-        padding-left: 13px;
-    }
-
-    .sub-main a {
-        padding: 15px 19px;
-        font-size: 15px;
-    }
-
-    .links h3 {
-        font-size: 18px;
-    }
-
-    .footer-social {
-        padding-top: 5px;
+    #copy_right::after {
+        width: 100%;
     }
 }
