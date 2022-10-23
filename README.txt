@@ -1,4 +1,4 @@
-Directory Structure
+Structure : If You Want to use this, here is a normal way to update the website as you wish
 -------------------
 css\              - Stylesheets CSS files for the template.
 images\           - Images used in template.
