@@ -1,314 +1,374 @@
 <!DOCTYPE html>
-<html lang="en">
-
-
-<head>
+<html lang="en-US">
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="keywords" content="Custom Discord Bot, Paid Discord Bot, Nft Developer, Nft Discord Bots, Custom Discord Bot Project" />
-    <meta name="description" content="Have any project you have always wanted to do? Want to change a little bit of your website? Or just have a nicely branded website with a personal touch? NoError Studios is your answer! We have a great staff who will help you create with you the website you have always wanted." />
-    <title>NoError</title>
-    <meta name="og:title" content="NoError™️">
-    <meta content="NoError™️" property="og:title" />
-    <meta content="Want epic websites , Discord Bots or custom projects? Contact NoError Studios which will provide you with well developed custom projects!" property="og:description" />
-    <meta content="NoError™️" property="og:url" />
-    <meta content="https://i.imgur.com/PVLbixa.png" property="og:image" />
-    <meta content="https://i.imgur.com/PVLbixa.png" property="og:image:secure_url" />
-    <meta property="og:site_name" content="NoError™️">
-    <meta content="#FFFFFF" data-react-helmet="true" name="theme-color" />
-
-    <!--font-awesome icons link-->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/venobox.css">
-    <link rel="stylesheet" href="css/lightbox.min.css">
-    <!--main style file-->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <!--lol idk-->
-    <link rel="icon" type="image/ico" href="fav.ico" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-</head>
-
-<body id="darkmode">
-    <!-- Preloader -->
-    <div class="loader_screen preloader" id="preloader">
-        <div class="loader loader-box">
-            <svg viewBox="0 0 80 80">
-                <rect x="8" y="8" width="64" height="64"></rect>
-            </svg>
-        </div>
-    </div>
-    <!-- Preloader -->
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Cart <b>.</b></h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="row cart-item">
-                        <div class="col-sm-4 col-lg-4 cart-img">
-                            <img src="images/product1.png" alt="product" class="img-fluid">
-                            <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="col-sm-8 col-lg-8">
-                            <h3>Ober Headset</h3>
-                            <span>1 x $135</span>
-                        </div>
-                    </div>
-                    <div class="row cart-item">
-                        <div class="col-sm-4 col-lg-4 cart-img">
-                            <img src="images/product3.png" alt="product" class="img-fluid">
-                            <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="col-sm-8 col-lg-8">
-                            <h3>Wired Earphone</h3>
-                            <span>2 x $99</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <a href="cart.html" class="main-btn model-btn">Checkout $320</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact Modal -->
-    <div class="modal fade" id="contact-model-large" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <form>
-                    <div class="modal-header">
-                        <h5 class="modal-title">Contact <b>.</b></h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row contact-box">
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Full Name">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email Address">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="form-group">
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="7" placeholder="Your Message"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="submit" class="main-btn model-btn">Send Message</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    <!-- Modal -->
-
-    <!-- HEADER AREA START -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="navber">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">No<span>Error</span></a>
-            <div class="menu-main" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto menu-item">
-                    <li class="nav-item">
-                        <a class="nav-link menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="custom-menubar">
-            <ul class="nav-link-block">
-                <li>
-                    <a href="#banner" class="menu-link">Home</a>
-                </li>
-                <li>
-                    <a href="#about" class="menu-link">About Us</a>
-                </li>
-                <li>
-                    <a href="https://novacosmos.live" class="menu-link">Nova</a>
-                </li>
-                <li>
-                    <a class="menu-link" data-toggle="modal" data-target="#contact-model-large">Contact</a>
-                </li>
-                <li>
-                    <a href="https://discord.gg/fDSE73FEAQ" class="menu-link">Discord</a>
-                </li>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NoError Studios</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Zen+Dots:wght@400;500;700&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Dots:wght@400;500;700&amp;display=swap" media="print" onload="this.media='all'"/>
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Dots:wght@400;500;700&amp;display=swap"/>
+    </noscript>
+    <link href="css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
+    <link href="css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
+    <link href="css/aos.css?ver=1.2.0" rel="stylesheet">
+    <link href="css/ekko-lightbox.css?ver=1.2.0" rel="stylesheet">
+    <link href="css/main.css?ver=1.2.0" rel="stylesheet">
+    <noscript>
+      <style type="text/css">
+        [data-aos] {
+            opacity: 1 !important;
+            transform: translate(0) scale(1) !important;
+        }
+      </style>
+    </noscript>
+  </head>
+  <body id="top">
+    <header class="d-flex flex-column">
+      <div class="container pt-4">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent px-0"><a class="text-white navbar-brand" href="#">NoError Studios</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#da-navbarNav" aria-controls="da-navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse text-uppercase" id="da-navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#services">Services</a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#About">About</a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="">Discord</a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
             </ul>
-            <ul class="responsive-nav">
-</ul>
-            <div class="menu-close">
-                <a class="hide-menu-btn"><i class="fa fa-times" aria-hidden="true"></i></a>
-            </div>
-        </div>
-    </nav>
-    <!-- HEADER AREA END -->
-
-    <!-- BANNER AREA START -->
-    <section id="banner">
-        <div class=".particles-js-canvas-el" id="particles-js"></div>
-        <div class="backtotop">
-            <a href="#banner"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-        </div>
-        <div class="follow-us">
-            <span>Follow us</span>
-            <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-        </div>
-        <div class="banner-arrow">
-            <i class="fa fa-angle-left arrow-al" aria-hidden="true"></i>
-            <i class="fa fa-angle-right arrow-ar" aria-hidden="true"></i>
-        </div>
+          </div>
+        </nav>
+      </div>
+      <div class="da-home-page-text flex-grow-1 d-flex align-items-center" data-aos="fade-right" data-aos-duration="1000">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-8 col-md-6 landscape-m-auto tab-m-auto banner-img">
-                    <img src="images/banner.png" alt="banner-img" class="img-fluid">
-                    <a class="vid-btn venobox" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=dV7WhPTHZDE&t=78s"><i class="fa fa-play" aria-hidden="true"></i></a>
-                </div>
-                <div class="col-lg-5 m-auto banner-txt">
-                    <div class="banner-main">
-                        <div class="banner-item">
-                            <h3>No<span>Error</span></h3>
-                            <h3>Studios</h3>
-                            <p>Want epic websites , Discord Bots or custom projects? Contact NoError Studios which will provide you with well developed custom projects! </p>
-                            <a href="#" class="main-btn">Get Started</a>
-                        </div>
-                        <div class="banner-item">
-                            <h3>No<span>Error</span></h3>
-                            <h3>Studios</h3>
-                            <p>Want epic websites , Discord Bots or custom projects? Contact NoError Studios which will provide you with well developed custom projects! </p>
-                            <a href="#" class="main-btn">Get Started</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <div class="col-md-10 col-sm-12 px-0 mx-0">
+            <h2 class="display-3 text-uppercase">DIGITAL TECHNOLOGY SOLUTION</h2>
+            <h3 class="h4 mt-3">Let us handle your Coding and Tech Related Needs
+</h3><a class="smooth-scroll btn btn-outline-light mt-4" href="#learn">Learn More</a>
+          </div>
         </div>
-    </section>
-    <!-- BANNER AREA END -->
-    <!-- ABOUT AREA START -->
-    <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 heading">
-                    <h3>About Us!</h3>
-                </div>
-            </div>
-            <div class="row about-pt">
-                <div class="col-lg-5 col-sm-9 m-sm-auto about-img">
-                    <div class="about-txt-overlay">
-                        <h3 class="counter" data-counterup-time="2000" data-counterup-delay="30" data-counterup-beginat="1">11</h3>
-                        <span>Staff Members</span>
-                    </div>
-                    <img src="images/about.jpg" alt="about-img" class="img-fluid">
-                </div>
-                <div class="col-lg-7">
-                    <div class="about-txt">
-                        <span>NoError</span>
-                        <h3>Imaginations are meant to be real and not stay as an idea, NoError will help you with it<b>.</b></h3>
-                        <p>We provide a vast variety of websites and discord bots which are developed and nourished by our team and We have different custom projects alongside. Unlike other bot shops, we develop discord bots and websites according to the taste of our customers. You name them and we got it. Customers bring satisfied that is our main priority. Besides from bot orders we provide free open source projects on our youtube channel.</p>
-                        <p class="mb-3">So why not get a bot today, not to someone else's choice but yours. Not someone else's needs but yours. Get it today! Make your imaginations comes to life with no error                        </p>
-                        <a href="https://discord.gg/fDSE73FEAQ " class="main-btn">Contact Us</a>
-                    </div>
-                </div>
-            </div>
+      </div>
+    </header>
+    <div class="page-content">
+      <div>
+<div class="da-section da-work bg-secondary" id="learn">
+  <div class="container">
+    <div class="h3 pb-3 text-center text-white" data-aos="fade-up">Why Work With Us?</div>
+    <p class="px-5 pb-5 text-center text-white" data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-3" data-aos="flip-left">
+          <div class="card-body mt-4 mb-1 text-center"><i class="pb-3 text-primary fas fa-briefcase fa-3x"></i>
+            <div class="h4 pb-3">Experience</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit primis rutrum, nullam tempor malesuada laoreet tempus blandit pretium etc.</p>
+          </div>
         </div>
-    </section>
-    <!-- ABOUT AREA END -->
-
-
-    <!-- SUBSCRIBE AREA START -->
-    <section id="subscribe">
-        <div class="container zindex">
-            <div class="row">
-                <div class="col-lg-6 col-md-8 subscribe-txt">
-                    <h3>Get Bot Hosting for Just $ 0.75<b>.</b></h3>
-                </div>
-                <div class="col-lg-6 col-md-4 text-center">
-                    <a href="https://thermalhosting.com" class="subscribe-btn">Thermal Hosting</a>
-                </div>
-            </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-3" data-aos="zoom-in-up">
+          <div class="card-body mt-4 mb-1 text-center"><i class="pb-3 text-primary fas fa-sliders-h fa-3x"></i>
+            <div class="h4 pb-3">Flexibility</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit primis rutrum, nullam tempor malesuada laoreet tempus blandit pretium etc.</p>
+          </div>
         </div>
-    </section>
-    <!-- SUBSCRIBE AREA END -->
-    <!-- FOOTER AREA START -->
-    <section id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 footer-logo">
-                    <a href="index.html">No<b>Error</b></a>
-                    <p>Want epic websites , Discord Bots or custom projects? Contact NoError Studios which will provide you with well developed custom projects!</p>
-                    <div class="footer-social">
-                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        <a href="https://www.youtube.com/c/NoErrorStudios"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-sm-4 footer-menu">
-                    <h3>Site Menu</h3>
-                    <a href="index.html">Home</a>
-                    <a href="https://patreon.com/noerror">Patreon</a>
-                    <a href="https://discord.gg/fDSE73FEAQ">About Us</a>
-                    <a href="https://discord.gg/fDSE73FEAQ">Reviews</a>
-                </div>
-                <div class="col-lg-2 col-sm-4 footer-menu">
-                    <h3>Information</h3>
-                    <a href="https://discord.gg/fDSE73FEAQ">FAQ</a>
-                    <a href="#">Site Maps</a>
-                    <a href="https://discord.gg/fDSE73FEAQ">Privacy Policy</a>
-                    <a href="#contact">Contact Us</a>
-                </div>
-            </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-3" data-aos="flip-right">
+          <div class="card-body mt-4 mb-1 text-center"><i class="pb-3 text-primary fas fa-trophy fa-3x"></i>
+            <div class="h4 pb-3">Results</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit primis rutrum, nullam tempor malesuada laoreet tempus blandit pretium etc.</p>
+          </div>
         </div>
-    </section>
-    <!-- FOOTER AREA END -->
-    <!-- COPY_RIGHT AREA START -->
-    <section id="copy_right">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="row">
-                        <div class="col-lg-6 col-sm-7 copy-right-txt">
-                            <p><i class="fa fa-copyright" aria-hidden="true"></i> 2022 Developed by <a href="https://NoError.Studio">NoError.</a></p>
-                        </div>
-                        <div class="col-lg-6 col-sm-5 text-right copy-right-txt">
-                            <p>All Rights Reserved.</p>
-                        </div>
-                    </div>
-                </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="da-section bg-light" id="services">
+  <div class="da-services">
+    <div class="container text-center">
+      <div class="h3 pb-5 text-center" data-aos="fade-up">Our Services</div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="card mb-3">
+            <div class="card-body py-5" data-aos="zoom-in" data-aos-duration="500">
+              <div class="text-primary"><i class="pb-3 fas fa-code fa-3x"></i>
+                <p class="font-weight-bold">Web Design</p>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit primis rutrum, nullam tempor malesuada laoreet tempus blandit pretium etc.</p>
             </div>
+          </div>
         </div>
-    </section>
-    <!-- COPY_RIGHT AREA END -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card mb-3">
+            <div class="card-body py-5" data-aos="zoom-in" data-aos-duration="1000">
+              <div class="text-primary"><i class="pb-3 fab fa-buromobelexperte fa-3x"></i>
+                <p class="font-weight-bold">Graphic Design</p>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit primis rutrum, nullam tempor malesuada laoreet tempus blandit pretium etc.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card mb-3">
+            <div class="card-body py-5" data-aos="zoom-in" data-aos-duration="1500">
+              <div class="text-primary"><i class="pb-3 fas fa-cubes fa-3x"></i>
+                <p class="font-weight-bold">App Development</p>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit primis rutrum, nullam tempor malesuada laoreet tempus blandit pretium etc.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card mb-3">
+            <div class="card-body py-5" data-aos="zoom-in" data-aos-duration="2000">
+              <div class="text-primary"><i class="pb-3 fas fa-eye fa-3x"></i>
+                <p class="font-weight-bold">Application Support</p>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit primis rutrum, nullam tempor malesuada laoreet tempus blandit pretium etc.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <!-- JavaScript -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/venobox.min.js"></script>
-    <script src="js/counterup.min.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/particles.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/custom.js"></script>
+<div class="da-expertise">
+  <div class="row mx-0">
+    <div class="col-md-6 px-0 da-exp-image" style="background-image: url('https://cdn.discordapp.com/attachments/978504859642908743/1033022593722236998/2022_10_21_0x4_Kleki.png')" data-aos="zoom-in"></div>
+    <div class="col-md-6 da-exp-skills">
+      <div class="container text-uppercase">
+        <h3 class="h5 mb-5">Our Expertise</h3>
+        <div class="col px-0 mb-4">
+          <p>Web Design 85%</p>
+          <div class="progress" style="height: 5px;">
+            <div class="progress-bar" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="col px-0 mb-4">
+          <p>Mobile App 70%</p>
+          <div class="progress" style="height: 5px;">
+            <div class="progress-bar" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="col px-0 mb-4">
+          <p>Discord Bot 90%</p>
+          <div class="progress" style="height: 5px;">
+            <div class="progress-bar" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="col px-0 mb-4">
+          <p>Software And Tools 75%</p>
+          <div class="progress" style="height: 5px;">
+            <div class="progress-bar" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="da-section bg-secondary text-white">
+  <div class="container">
+    <div class="row px-4">
+      <div class="col-md-3 col-sm-6">
+        <div class="media py-2" data-aos="flip-up"><i class="mr-3 fas fa-clipboard-check  fa-3x fa-fw"></i>
+          <div class="media-body">
+            <div class="h5">1575</div>
+            <div class="h6">About Done</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="media py-2" data-aos="flip-up"><i class="mr-3 fas fa-smile  fa-3x fa-fw"></i>
+          <div class="media-body">
+            <div class="h5">1245</div>
+            <div class="h6">Happy Clients</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="media py-2" data-aos="flip-up"><i class="mr-3 fas fa-file-alt fa-3x fa-fw"></i>
+          <div class="media-body">
+            <div class="h5">865</div>
+            <div class="h6">Appreciations</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="media py-2" data-aos="flip-up"><i class="mr-3 fas fa-clock  fa-3x fa-fw"></i>
+          <div class="media-body">
+            <div class="h5">8565</div>
+            <div class="h6">Working Hours</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="da-section">
+  <div class="container">
+    <div class="h3 text-center" data-aos="fade-up">Meet our Team Members</div>
+  </div>
+  <div class="da-team carousel slide py-5" id="da-carouselIndicator" data-ride="carousel" data-aos="zoom-in-up" data-aos-duration="1000">
+    <div class="container">
+      <ol class="carousel-indicators">
+        <li class="active" data-target="#da-carouselIndicator" data-slide-to="0"></li>
+        <li data-target="#da-carouselIndicator" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card d-block mb-3"><img class="card-img-top" src="https://cdn.discordapp.com/attachments/978504859642908743/1033436521082126436/ezgif.com-gif-maker_40.gif" alt="image"/>
+                <div class="card-body text-center">
+                  <div class="h5">Saizuo</div>
+                  <p class="text-muted">CEO</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card d-block mb-3"><img class="card-img-top" src="https://cdn.discordapp.com/attachments/978504859642908743/1033438684692877352/ezgif.com-gif-maker_42.gif" alt="image"/>
+                <div class="card-body text-center">
+                  <div class="h5">Cypress</div>
+                  <p class="text-muted">COO</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card d-block mb-3"><img class="card-img-top" src="https://cdn.discordapp.com/attachments/978504859642908743/1033439766500360342/ezgif.com-gif-maker_43.gif" alt="image"/>
+                <div class="card-body text-center">
+                  <div class="h5">R3FL3X</div>
+                  <p class="text-muted">Software Developer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card d-block mb-3"><img class="card-img-top" src="https://cdn.discordapp.com/attachments/978504859642908743/1033594775338758144/2022_10_23_0ga_Kleki.png" alt="image"/>
+                <div class="card-body text-center">
+                  <div class="h5">CaCO3</div>
+                  <p class="text-muted">Discord Bot Dev</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card d-block mb-3"><img class="card-img-top" src="https://cdn.discordapp.com/attachments/978504859642908743/1033595192500043777/2022_10_23_0gb_Kleki.png" alt="image"/>
+                <div class="card-body text-center">
+                  <div class="h5">Enzzap</div>
+                  <p class="text-muted">Discord Bot Dev</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card d-block mb-3"><img class="card-img-top" src="https://cdn.discordapp.com/attachments/978504859642908743/1033595571103080488/2022_10_23_0gd_Kleki.png" alt="image"/>
+                <div class="card-body text-center">
+                  <div class="h5">KPKPNY</div>
+                  <p class="text-muted">Web Developer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="da-contact" id="contact">
+  <div class="da-contact-detail" data-aos="zoom-in" data-aos-duration="1000">
+    <div class="container">
+      <div class="card py-4 px-4">
+        <div class="h4 pb-4">Contact Us</div>
+        <div class="row">
+          <div class="col-md-7 col-sm-12 mb-3">
+            <div class="da-contact-message">
+              <form action="https://formspree.io/your@email.com" method="POST">
+                <div class="row">
+                  <div class="col-md-6 col-sm-12 mb-3">
+                    <input class="mr-3 form-control" type="text" name="first-name" placeholder="*First Name" required="required"/>
+                  </div>
+                  <div class="col-md-6 col-sm-12 mb-3">
+                    <input class="form-control" type="text" name="last-name" placeholder="Last Name"/>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col">
+                    <input class="form-control" type="text" name="Subject" placeholder="*Subject" required="required"/>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col">
+                    <input class="form-control" type="email" name="_replyto" placeholder="*E-mail" required="required"/>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col">
+                    <textarea class="form-control" name="message" placeholder="*Your Message" rows="4" required="required"></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <button class="btn btn-primary" type="submit">Send</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <p>Its always better to contact us via discord because we are not sure how long can it take to provide the email support. Max Time for Email replies if 2-5 Days.</p>
+            <p><b>Address:</b> 568, Hill Road, USA</p>
+            <p><b>Phone:</b> +1 802-457-1144</p>
+            <p><b>Email:</b> info@example.com</p>
+            <p><b>Fax:</b> +1 502-257-1156</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></div>
+    </div>
+    <footer class="bg-secondary da-section">
+      <div class="container text-white">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="h2 mb-4">NoError Studios</div>
+            <p class="mb-3">contact@noerror.studio</p>
+          </div>
+          <div class="col-md-4">
+            <div class="h6 pb-2">Follow Us</div>
+            <ul>
+              <li class="mb-1"><a class="da-social-link" href="#"><i class="fab fa-github" aria-hidden="true"></i><span class="ml-2">Github</span></a></li>
+              <li class="mb-1"><a class="da-social-link" href="#"><i class="fab fa-youtube" aria-hidden="true"></i><span class="ml-2">Youtube</span></a></li>
+              <li class="mb-1"><a class="da-social-link" href="#"><i class="fab fa-discord" aria-hidden="true"></i><span class="ml-2">Discord</span></a></li>
 
-</body>
-
-
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <div class="h6 pb-4">Copyright</div>
+            <p class="pb-1">&copy; NoError Studios. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div id="scrolltop">
+      <button class="btn btn-primary"><span class="icon"><i class="fas fa-angle-up fa-2x"></i></span></button>
+    </div>
+    <script src="scripts/jquery.min.js?ver=1.2.0"></script>
+    <script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
+    <script src="scripts/aos.js?ver=1.2.0"></script>
+    <script src="scripts/ekko-lightbox.min.js?ver=1.2.0"></script>
+    <script src="scripts/main.js?ver=1.2.0"></script>
+  </body>
 </html>
