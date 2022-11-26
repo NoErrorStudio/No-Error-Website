@@ -136,7 +136,7 @@ header label:after {
 nav {   
   
   padding-top:15px ;
-  z-index: 6000000 ;
+  z-index: 5;
   float: right;
   max-height: 0;
   width: 100%;
@@ -174,6 +174,7 @@ nav a:hover:after, nav a:active:after{
   width: 100%;
 }
 nav a {
+  z-index: 1000000;
   transition: all 0.3s ease 0s;  
   position: relative;
   padding: 10px;
@@ -181,11 +182,19 @@ nav a {
   width: 100%;
 }
 
-#nav { display: none; }
-
-#nav:checked ~ nav {
-  max-height: 200px; 
+.dc:hover{
+  color: black;
 }
+
+.dc{
+  position: absolute;
+  font-size: 35px;
+  top: 4%;
+  right: 5%;
+  color: white;
+}
+
+
 .logo{
   position: absolute;
   left: 3%;
@@ -228,7 +237,8 @@ font-family: 'Passion One', monospace;
     font-family: 'Courier New', Courier, monospace;
 }
 
-.maindiv a{
+
+.learn{
   z-index: 690;
   font-family: monospace;
   font-size: 19px;
@@ -238,7 +248,7 @@ font-family: 'Passion One', monospace;
 color: black;
 }
 
-.maindiv a:hover{
+.learn:hover{
   background-color: black;
   color: white;
   transition: all .5s ease\;
@@ -246,9 +256,10 @@ color: black;
 
 @media only screen and (min-width: 700px) {
   
-  header label { display: none; }
+  .dc { display: none; }
   
   nav {
+    margin-top:-65px;
     width: auto;
     max-height: none;
   }
@@ -270,7 +281,41 @@ color: black;
   }
   
 }
+@media screen and (max-width:280px){
+  
+.maindiv{
+  margin-top: 10%;
+}
 
+.astronaut{
+  max-height: 200px!important;
+  transform: translateY(20%)!important;
+}
+
+@keyframes ee {
+	0% {
+    rotate: -3deg;
+		transform: translatey(0px);
+	}
+	30% {
+    scale: 1.01;
+    rotate: -6deg;
+    transform: translateX(-5px);
+		transform: translatey(-10px);
+	}
+  60%{
+    rotate: 2deg;
+  }
+	100% {
+    rotate: -3deg;
+		transform: translatey(0px);
+	}
+}
+
+  .maindiv h1{
+    font-size: 25px!important;
+  }
+}
 
 @media screen and (max-width:1018px){
   .maindiv h1{
@@ -330,7 +375,9 @@ color: black;
 }
 
 @media screen and (max-width:940px){
-
+.let{
+  padding-right: 0;
+}
 .maindiv{
   
   height: auto;
@@ -339,7 +386,7 @@ color: black;
 .astronaut{
   right: 1%!important;
 }
-.maindiv a{
+.learn{
   font-size: 11px;
 }
 
@@ -397,7 +444,7 @@ footer{
   translate: -10% 25%;
   height: 200px!important;
 }
-.maindiv a{
+.learn{
   font-size: 5px;
   padding: 3px 6px;
 }
@@ -426,7 +473,7 @@ footer{
   padding-left: 40px;
 }
 
-.maindiv a{
+.learn{
   font-size: 12px;
   padding: 6px 12.5px;
 }
@@ -439,7 +486,7 @@ footer{
 
 @media screen and (max-width:400px){
 
-  .maindiv a{
+  .learn{
     font-size: 8px;
   }
   .let{
@@ -463,6 +510,12 @@ footer{
 }
 
 @media screen and (max-width:360px) {
+
+.dc{
+  padding-top: 5px;
+  font-size: 30px;
+  padding-right: 20px;
+}
 
   .logo{
     font-size: 26px;
