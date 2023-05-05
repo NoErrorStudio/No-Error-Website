@@ -262,6 +262,10 @@ canvas{
   box-shadow: 3px -7px 169px 18px var(--text-color-2);
 }
 
+.home .container .title .btn.home:hover {
+  transform: scale(1.2);
+}
+
 .home .container .title .btns-home {
   margin-top: 20px;
 }
