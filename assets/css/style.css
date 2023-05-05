@@ -259,6 +259,7 @@ canvas{
   font-family: 'Inter';
   font-weight: 400;
   font-size: 20px;
+  box-shadow: 3px -7px 169px 18px var(--text-color-2);
 }
 
 .home .container .title .btns-home {
