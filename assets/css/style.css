@@ -1371,7 +1371,7 @@ footer .content .right .icons {
   margin-bottom: 75px;
   display: flex;
   justify-content: flex-start;
-  gap: 49px;
+  gap: 25px;
 }
 footer .content .left .head .underline {
   display: none;
