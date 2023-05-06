@@ -276,7 +276,6 @@ canvas{
   height: 100%;
   z-index: 11;
   position: fixed;
-  display: none;
 }
 
 .nav .navbar .mobile-nav-bar .icons {
@@ -347,7 +346,7 @@ canvas{
   font-family: 'Inter';
   font-weight: 400;
   font-size: 20px;
-  box-shadow: 3px -7px 169px 18px var(--text-color-2);
+  box-shadow: 0 0 60px var(--text-color-2);
   transition: transform 0.4s;
 }
 
@@ -1265,10 +1264,10 @@ footer .content .left .head .underline {
     display: none;
   }
   .home .container .homeback .frame1 {
-    height: 459px;
-    width: 275px;
+    height: 614px;
+    width: 250px;
     scale: 1.4;
-  }
+}
   .about .container .content {
     padding-right: 0px;
   }
@@ -1493,9 +1492,11 @@ footer .content .right .icons {
   height: 175px;
 }
 .home .container .homeback .frame1 {
-  height: 456px;
-  width: 241px;
+  top: -62px;
+  height: 521px;
+  width: 222px;
   scale: 1.4;
+  overflow: hidden;
 }
 .offer .container {
   padding-left: 1px;
@@ -1507,10 +1508,10 @@ footer .content .right .icons {
   font-size: 14px;
 }
 h1 {
-  font-size: 26px!important;
+  font-size: 31px!important;
 }
-.home .container .title .p2 h2 {
-  font-size: 26px;
+.title .p2 h2 {
+  font-size: 31px;
 }
 .offer .container {
   margin-top: 241px;
@@ -1522,10 +1523,7 @@ h1 {
 .about .container .about-back .frame4 {
   top: 1037px;
 }
-.home .container .homeback .frame1 {
-  height: 442px;
-  width: 221px;
-}
+
 footer .content .right .icons a {
   font-size: 20px;
 }
