@@ -34,6 +34,94 @@ body {
   padding: 0px 30px 0px;
 }
 
+/* Pre-Loader */
+.pre-loader {
+  z-index: 1111111;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-color);
+  position: fixed;
+  overflow: hidden;
+}
+
+.pre-loader .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pre-loader .container .box {
+  width: 200px;
+  height: 200px;
+  border:  0px solid;
+  border-radius: 50%;
+  position: absolute;
+ }
+
+ .pre-loader .container .loading {
+  color: deepskyblue;
+  font-family: monospace;
+  font-size: 1rem;
+  font-weight: 700;
+ }
+
+ .pre-loader .container .box:nth-child(1) {
+  border-bottom-width: 10px;
+  border-color: white;
+  animation: pre-loadanime1 2s linear infinite;
+  -webkit-animation: pre-loadanime1 2s linear infinite;
+ }
+ 
+ .pre-loader .container .box:nth-child(2) {
+  border-right-width: 10px;
+  border-color: orange;
+  animation: pre-loadanime2 2s linear infinite;
+  -webkit-animation: pre-loadanime2 2s linear infinite;
+ }
+
+ .pre-loader .container .box:nth-child(3) {
+  border-top-width: 10px;
+  border-color: lawngreen;
+  animation: pre-loadanime3 2s linear infinite;
+  -webkit-animation: pre-loadanime3 2s linear infinite;
+ }
+ 
+ 
+ @keyframes pre-loadanime1 {
+  0% {
+   transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+  }
+ 
+  100% {
+   transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+ }
+ 
+ @keyframes pre-loadanime2 {
+  0% {
+   transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+  }
+ 
+  100% {
+   transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+  }
+ }
+ 
+ @keyframes pre-loadanime3 {
+  0% {
+   transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+  }
+ 
+  100% {
+   transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+  }
+ }
+
+
 /* Particles */
 
 canvas{
