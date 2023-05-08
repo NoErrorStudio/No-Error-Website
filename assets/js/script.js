@@ -7,3 +7,10 @@ menuIcon.onclick = () => {
   menuIcon.classList.toggle('active');
   navbar.classList.toggle('active');
 };
+
+/* Pre Loader */
+var preloader = document.getElementById('loader')
+
+function loaded() {
+  preloader.style.display = ('none');
+}
