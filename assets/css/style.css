@@ -349,7 +349,7 @@ canvas{
 }
 
 .about .container .about-back .frame4 {
-  content: url(../../assets/img/about-pic.png);
+  content: url("https://cdn.dribbble.com/users/281280/screenshots/4905317/ship_big.gif");
   width: 581px;
   position: absolute;
   z-index: -1;
