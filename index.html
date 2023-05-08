@@ -1,346 +1,436 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NoError Studios</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    </head>
+    <link rel="icon" href="https://octagonemusic.github.io/NoError/Assets/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f03ed816cf.js" crossorigin="anonymous"></script>
+
+</head>
 
 <body>
-
-    <div class="particles">
-        <div id="particles-js"></div>
-        <div class="count-particles"> 
-            <span class="js-count-particles">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="Assets/logo.png" alt="Logo" class="d-inline-block navbar-logo align-text-top">
+                <span class="logo-text">&nbspNoError Studios</span>
+            </a>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://discord.gg/PXRbkYXrP8" target="_blank"><i
+                                class="fa-brands nav-icon fa-discord fa-xl"><span class="mobileNavLinks"
+                                    id="discordLink">&nbsp&nbspDiscord</span></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/noerrorstudio" target="_blank"><i
+                                class="fa-brands nav-icon fa-github fa-xl"><span class="mobileNavLinks"
+                                    id="githubLink">&nbsp&nbspGitHub</span></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.youtube.com/c/NoErrorStudios" target="_blank"><i
+                                class="fa-brands nav-icon fa-youtube fa-xl"><span class="mobileNavLinks"
+                                    id="youtubeLink">&nbsp&nbspYouTube</span></i></a>
+                    </li>
+                    <li class="nav-item hidden-item">
+                        <a class="nav-link" href="https://www.linkedin.com/company/noerror-studio" target="_blank"><i
+                                class="fa-brands nav-icon fa-linkedin-in fa-xl"><span class="mobileNavLinks"
+                                    id="linkedinLink">&nbsp&nbspLinkedIn</span></i></a>
+                    </li>
+                    <li class="nav-item hidden-item">
+                        <a class="nav-link" href="https://twitter.com/NoErrorStudio" target="_blank"><i
+                                class="fa-brands nav-icon fa-twitter fa-xl"><span class="mobileNavLinks"
+                                    id="twitterLink">&nbsp&nbspTwitter</span></i></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-        <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+    </nav>
+
+    <div id="particles-js"></div>
+
+    <div class="wrapper">
+        <div class="intro hidden">
+            <div class="background-img"><img src="Assets/background.png"></div>
+            <div class="intro-text">
+                <h1>Your <span class="colored-text">Progress</span> Is</h1><br>
+                <h1>What We <span class="colored-text">Value</span> Most</h1><br>
+                <button class="hire-us btn btn-primary btn-lg"><a href="#contact-us">Hire Us</a></button>
+            </div>
+        </div>
+        <div class="about container-fluid hidden">
+            <h1><span class="bottom-line">What is NoError Stu</span>dios?</h1>
+            <div class="row">
+                <div class="col-sm-12 col-lg-7">
+                    <p>We are a service that provides a vast variety of Websites and Discord Bots which are
+                        developed and nourished by our team along with a few other different projects. Unlike other bot
+                        shops,
+                        we develop Discord Bots and Websites according to the taste of
+                        our customers. You name them and we got it. Customer satisfaction
+                        is our main priority.</p>
+
+                    <p>Apart from bot orders, we also provide free open source projects on our YouTube channel.</p>
+
+                    <p>So why not get a bot today? Not to someone else's choice
+                        but yours! Not someone else's needs but yours!
+                        Get it today! Make your imaginations comes to life with
+                        NoError Studios!</p>
+                </div>
+                <div class="col-5">
+                    <img src="Assets/about.png" alt="About Image">
+                </div>
+            </div>
+        </div>
+
+        <div class="services hidden">
+            <h1>Serv<span class="bottom-line">ices We Offer!</span></h1>
+            <div class="row">
+                <div class="service-box col-sm-12 col-lg-4">
+                    <div class="service-child">
+                        <div class="row">
+                            <div class="service-img col-4">
+                                <div class="circle"><i class="fa-brands discord-service fa-discord fa-2xl"></i></div>
+                            </div>
+                            <div class="service-text col-8">
+                                <p>Discord Bots</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-box col-sm-12 col-lg-4">
+                    <div class="service-child">
+                        <div class="row">
+                            <div class="service-img col-4">
+                                <div class="circle"><i class="fa-solid fa-window-maximize fa-2xl"></i></div>
+                            </div>
+                            <div class="service-text col-8">
+                                <p>Websites/<br>Dashboards</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-box col-sm-12 col-lg-4">
+                    <div class="service-child">
+                        <div class="row">
+                            <div class="service-img col-4">
+                                <div class="circle"><i class="fa-solid fa-code fa-2xl"></i></div>
+                            </div>
+                            <div class="service-text col-8">
+                                <p>Custom Scripts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="service-box col-sm-12 col-lg-4">
+                    <div class="service-child">
+                        <div class="row">
+                            <div class="service-img col-4">
+                                <div class="circle"><i class="fa-solid fa-microchip fa-2xl"></i></div>
+                            </div>
+                            <div class="service-text col-8">
+                                <p>AI Software<br>Development</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-box col-sm-12 col-lg-4">
+                    <div class="service-child">
+                        <div class="row">
+                            <div class="service-img col-4">
+                                <div class="circle"><i class="fa-solid fa-screwdriver-wrench fa-2xl"></i></div>
+                            </div>
+                            <div class="service-text col-8">
+                                <p>Custom Software</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-box col-sm-12 col-lg-4">
+                    <div class="service-child">
+                        <div class="row">
+                            <div class="service-img col-4">
+                                <div class="circle"><i class="fa-solid fa-layer-group fa-2xl"></i></div>
+                            </div>
+                            <div class="service-text col-8">
+                                <p>Frontend & Backend</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects hidden">
+            <h1><span class="bottom-line">Our Recent Pro</span>jects</h1>
+            <div class="row">
+                <div class="col-sm-12 col-lg-4">
+                    <div class="project-box">
+                        <div class="project-img">
+                            <div class="test-img"></div>
+                        </div>
+                        <div class="project-text">
+                            <h3>Project Name</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <div class="project-box">
+                        <div class="project-img">
+                            <div class="test-img"></div>
+                        </div>
+                        <div class="project-text">
+                            <h3>Project Name</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <div class="project-box">
+                        <div class="project-img">
+                            <div class="test-img"></div>
+                        </div>
+                        <div class="project-text">
+                            <h3>Project Name</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-projects">
+                <h5><a href="">View All Projects</a></h5>
+            </div>
+        </div>
+
+        <div class="reviews hidden">
+            <h1>Let's He<span class="bottom-line">ar From Our Clients</span></h1>
+            <div class="row comment-row">
+                <div class="col-sm-12 col-lg-4 comment-box comment-box-small">
+                    <div class="username"><img src="Assets/logo.png">
+                        <h4>Username</h4>
+                    </div>
+                    <div class="review-text small">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos iste rerum molestias expedita
+                            nisi
+                            repellendus culpa, ex tempore, pariatur minus amet!</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4 comment-box comment-box-large">
+                    <div class="username"><img src="Assets/logo.png">
+                        <h4>Username</h4>
+                    </div>
+                    <div class="review-text">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos iste rerum molestias expedita
+                            nisi
+                            repellendus culpa, ex tempore, pariatur minus amet!</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4 comment-box comment-box-small">
+                    <div class="username"><img src="Assets/logo.png">
+                        <h4>Username</h4>
+                    </div>
+                    <div class="review-text small">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos iste rerum molestias expedita
+                            nisi
+                            repellendus culpa, ex tempore, pariatur minus amet!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row comment-row comment-row-bottom">
+                <div class="col-sm-12 col-lg-4 comment-box comment-box-small">
+                    <div class="username"><img src="Assets/logo.png">
+                        <h4>Username</h4>
+                    </div>
+                    <div class="review-text small">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos iste rerum molestias expedita
+                            nisi
+                            repellendus culpa, ex tempore, pariatur minus amet!</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4 comment-box comment-box-large">
+                    <div class="username"><img src="Assets/logo.png">
+                        <h4>Username</h4>
+                    </div>
+                    <div class="review-text">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos iste rerum molestias expedita
+                            nisi
+                            repellendus culpa, ex tempore, pariatur minus amet!</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4 comment-box comment-box-small">
+                    <div class="username"><img src="Assets/logo.png">
+                        <h4>Username</h4>
+                    </div>
+                    <div class="review-text small">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos iste rerum molestias expedita
+                            nisi
+                            repellendus culpa, ex tempore, pariatur minus amet!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="needs hidden">
+            <div class="text">
+                <h1>Let Us Handle your Coding And Tech Related Needs</h1>
+            </div>
+            <div class="hire-us-btn">
+                <button class="hire-us btn btn-primary btn-lg"><a href="#contact-us">Hire Us</a></button>
+            </div>
+        </div>
+
+        <div class="contact hidden" id="contact-us">
+            <h1><span class="bottom-line">Contact</span> Us</h1>
+            <div class="row">
+                <div class="col-sm-12 col-lg-10">
+                    <div class="contact-form">
+                        <form>
+                            <div class="row input-row">
+                                <div class="col-sm-12">
+                                    <input type="text" id="name" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="row input-row">
+                                <div class="col-sm-12">
+                                    <input type="email" id="email" placeholder="E-Mail">
+                                </div>
+                            </div>
+                            <div class="row input-row">
+                                <div class="col-sm-12">
+                                    <select required>
+                                        <option value="" disabled selected>Budget</option>
+                                        <option value="500">$500 - $1,000</option>
+                                        <option value="1000">$1,000 - $3,000</option>
+                                        <option value="3000">$3,000 - $5,000</option>
+                                        <option value="5000">$5,000 - $7,000</option>
+                                        <option value="7000">$7,000 - $10,000</option>
+                                        <option value="10000">$10,000+</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row input-row">
+                                <div class="col-sm-12">
+                                    <select required>
+                                        <option value="" disabled selected>Services</option>
+                                        <option value="bots">Discord Bots</option>
+                                        <option value="websites">Websites/Dashboards</option>
+                                        <option value="scripts">Custom Scripts</option>
+                                        <option value="ai">AI Software Development</option>
+                                        <option value="software">Custom Software</option>
+                                        <option value="backend">Backend & Frontend</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row input-row">
+                                <div class="col-sm-12">
+                                    <textarea placeholder="Your Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="row input-row">
+                                <div class="col-sm-12 col-lg-4">
+                                    <input type="submit">
+                                </div>
+                                <div class="call-button col-sm-12 col-lg-4">
+                                    <button class="call-btn btn btn-primary btn-lg"><a
+                                            href="https://calendly.com/NoError" target="_blank">Book Call</a></button>
+                                </div>
+                                <div class="col"></div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="contact-icons col-lg-2">
+                    <div class="icons-list">
+                        <div class="icon-list-item row">
+                            <div class="icon-list-icon col-12">
+                                <a href="https://discord.gg/PXRbkYXrP8" target="_blank"><i
+                                        class="contact-icon fa-brands fa-discord fa-2xl"></i></a>
+                            </div>
+                        </div>
+                        <div class="icon-list-item row">
+                            <div class="icon-list-icon col-12">
+                                <a href="https://www.linkedin.com/company/noerror-studio" target="_blank"><i
+                                        class="contact-icon fa-brands fa-linkedin fa-2xl"></i></a>
+                            </div>
+                        </div>
+                        <div class="icon-list-item row">
+                            <div class="icon-list-icon col-12">
+                                <a href="https://github.com/noerrorstudio" target="_blank"><i
+                                        class="contact-icon fa-brands fa-github fa-2xl"></i></a>
+                            </div>
+                        </div>
+                        <div class="icon-list-item row">
+                            <div class="icon-list-icon col-12">
+                                <a href="https://www.youtube.com/c/NoErrorStudios" target="_blank"><i
+                                        class="contact-icon fa-brands fa-youtube fa-2xl"></i></a>
+                            </div>
+                        </div>
+                        <div class="icon-list-item row">
+                            <div class="icon-list-icon col-12">
+                                <a href="https://twitter.com/NoErrorStudio" target="_blank"><i
+                                        class="contact-icon fa-brands fa-twitter fa-2xl"></i></a>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <header>
-        <div class="nav">
-            <nav class="navbar">
-                <a href="index.html">
-                    <img src="assets/img/logo.svg" alt="">
-                    <span>NoError Studios</span>
-                </a>
-                <ul>
-                    <a href="#"><i class='bx bxl-discord bx-md'></i></a>
-                    <a href="#"><i class='bx bxl-github bx-md' ></i></a>
-                    <a href="#"><i class='bx bxl-youtube bx-md' ></i></a>
-                </ul>
-                <i class="bx bx-menu" id="menu-icons"></i>
-                <nav class="mobile-nav-bar">
-                    <div class="icons">
-                        <a href="#"><i class='bx bxl-discord'></i>Discord</a>
-                        <a href="#"><i class='bx bxl-linkedin' ></i>Linkedin</a>
-                        <a href="#"><i class='bx bxl-instagram-alt' ></i>Instagram</a>
-                        <a href="#"><i class='bx bxl-github' ></i>Github</a>
-                        <a href="#"><i class='bx bxl-youtube' ></i>Youtube</a>
-                        <a href="#"><i class='bx bxl-twitter' ></i>Twitter</a>
-                    </div>
-                </nav>
-            </nav>
-        </div>
-    </header>
-
-    <section class="home">
-        <div class="container">
-            <div class="title">
-                <h1>Your Progress Is</h1>
-                <div class="p2">
-                    <h1>What</h1>
-                    <h1>We</h1>
-                    <h2>Value</h2>
-                    <h1>Most</h1>
+    <div class="footer">
+        <div class="row">
+            <div class="footer-text col-sm-12 col-lg-8">
+                <div class="footer-logo d-flex">
+                    <img src="Assets/logo.png" alt="Logo" class="d-inline-block navbar-logo align-text-top">
+                    <span class="logo-text">&nbsp<span class="bottom-line">NoError Stu</span>dios</span>
                 </div>
-                <div class="btns-home">
-                    <a href="#" class="btn home">HIRE US</a>
-                </div>
+                <p>Want epic websites, Discord Bots or custom projects? Contact NoError Studios for well developed
+                    custom projects!</p>
+                <p>© 2023 NoError Studios. All Rights Reserved.</p>
             </div>
-            <div class="homeback">
-                <div class="frame1"></div>
-            </div>
-            <div class="home-frame">
-                <div class="frame2"></div>
-                <div class="frame3"></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="about">
-        <div class="container">
-            <div class="content">
-                <h1>What is No Error studio?</h1>
-                <div class="underline"></div>
-                <div class="text">
-                    <p>We provide a vast variety of websites and discord bots which are 
-                        developed and nourished by our team and We have different 
-                        custom projects alongside. Unlike other bot shops,  
-                        we develop discord bots and websites according to the taste of 
-                        our customers. You name them and we got it. Customers bring satisfied 
-                        that is our main priority. Besides from bot orders 
-                    </p>
-                    <p>we provide free open source projects on our YouTube channel.
-                        So why not get a bot today, not to someone else's choice 
-                        but yours. Not someone else's needs but yours. 
-                        Get it today! Make your imaginations comes to life with 
-                        no error
-                    </p>
-                </div>
-            </div>
-            <div class="about-frame">
-                <div class="frame2"></div>
-                <div class="frame3"></div>
-            </div>
-            <div class="about-back">
-                <div class="frame4"></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="offer">
-        <div class="container">
-            <div class="content">
-                <h1>Services we offer!</h1>
-                <div class="underline"></div>
-            </div>
-            <div class="cards">
-                <div class="card one">
-                    <div class="icon"></div>
-                    <h4>Discord Bots</h4>
-                </div>
-                <div class="card two">
-                    <div class="icon"></div>
-                    <h4>Websites / Dashboards</h4>
-                </div>
-                <div class="card three">
-                    <div class="icon"></div>
-                    <h4>Custom scripts</h4>
-                </div>
-                <div class="card four">
-                    <div class="icon"></div>
-                    <h4>AI Software Development</h4>
-                </div>
-                <div class="card five">
-                    <div class="icon"></div>
-                    <h4>Custom Software</h4>
-                </div>
-                <div class="card six">
-                    <div class="icon"></div>
-                    <h4>Backend & Frontend</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="projects">
-        <div class="container">
-            <div class="content">
-                <h1>Our Recent projects</h1>
-                <div class="underline"></div>
-            </div>
-            <div class="project-cards">
-                <div class="project one">
-                    <div class="pic one"></div>
-                    <div class="text">
-                        <h4>Recent projects 1</h4>
-                        <p>INFO</p>
-                    </div>
-                </div>
-                <div class="project two">
-                    <div class="pic two"></div>
-                    <div class="text">
-                        <h4>Recent projects 1</h4>
-                        <p>INFO</p>
-                    </div>
-                </div>
-                <div class="project four">
-                    <div class="pic three"></div>
-                    <div class="text">
-                        <h4>Recent projects 1</h4>
-                        <p>INFO</p>
-                    </div>
-                </div>
-            </div>
-            <div class="view-all">
-                <a href="#">View All projects<div class="underline"></div></a>
-            </div>
-        </div>
-    </section>
-
-    <section class="client">
-        <div class="container">
-            <div class="content">
-                <h1>Let’s here from our clients</h1>
-                <div class="underline"></div>
-            </div>
-            <div class="client-cards">
-                <div class="wrap one">
-                    <div class="card one">
-                        <div class="line">
-                            <div class="icon"></div>
-                            <h5>Username1</h5>
-                        </div>
-                        <p>This is a positive review for no error studios. review ,This is a positive review for no error studios. review </p>
-                    </div>
-                    <div class="card two">
-                        <div class="line">
-                            <div class="icon"></div>
-                            <h5>Username2</h5>
-                        </div>
-                        <p>This is a positive review for no error studios. review ,This is a positive review for no error studios. review </p>
-                    </div>
-                </div>
-                <div class="wrap two">
-                    <div class="card one">
-                        <div class="line">
-                            <div class="icon"></div>
-                            <h5>Username3</h5>
-                        </div>
-                        <p>This is a positive review for no error studios. review ,This is a positive review for no error studios. review </p>
-                    </div>
-                    <div class="card two">
-                        <div class="line">
-                            <div class="icon"></div>
-                            <h5>Username4</h5>
-                        </div>
-                        <p>This is a positive review for no error studios. review ,This is a positive review for no error studios. review </p>
-                    </div>
-                </div>
-                <div class="wrap three">
-                    <div class="card one">
-                        <div class="line">
-                            <div class="icon"></div>
-                            <h5>Username5</h5>
-                        </div>
-                        <p>This is a positive review for no error studios. review ,This is a positive review for no error studios. review </p>
-                    </div>
-                    <div class="card two">
-                        <div class="line">
-                            <div class="icon"></div>
-                            <h5>Username6</h5>
-                        </div>
-                        <p>This is a positive review for no error studios. review ,This is a positive review for no error studios. review </p>
-                    </div>
-                </div>
-            </div>
-            <div class="client-frame">
-                <div class="frame2"></div>
-                <div class="frame3"></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="hire">
-        <div class="container">
-            <div class="content">
-                <h1>Let us handle your Coding and Tech Related Needs</h1>
-            </div>
-            <div class="btn">
-                <a href="#" class="hire-btn">Hire us</a>
-            </div>
-            <div class="hire-frame">
-                <div class="frame2"></div>
-                <div class="frame3"></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact">
-        <div class="container">
-            <div class="content">
-                <h1>Contact us</h1>
-            </div>
-            <div class="contact-content">
-                <div class="form">
-                    <input class="name" type="text" name="Name" id="name" placeholder="Name">
-                    <input class="email" type="email" name="Email" id="email" placeholder="Email">
-                    <div class="selection">
-                        <select name="Budget" id="butget" class="butget">
-                            <option value="0">Budget</option>
-                            <option value="1">$500 - $1K</option>
-                            <option value="2">$1K - $3K</option>
-                            <option value="3">$3K - $5K</option>
-                            <option value="4">$5K - $7K</option>
-                            <option value="5">$7K - $10K</option>
-                            <option value="6">$10k+</option>
-                        </select>
-                        <select name="Servces" id="services" class="services">
-                            <option value="0">Services</option>
-                            <option value="1">Discord Bots</option>
-                            <option value="2">Websites / Dashboards</option>
-                            <option value="3">Custom scripts</option>
-                            <option value="4">AI Software Development</option>
-                            <option value="5">Custom Software</option>
-                            <option value="6">Backend & Frontend</option>
-                        </select>
-                    </div>
-                    <textarea name="Message" id="Message" class="message" data-validate-field="Message" placeholder="Your message"></textarea>
-                    <div class="btn">
-                        <input type="submit" value="Submit" class="form-btn" >
-                        <input type="submit" value="Book A Call" class="form-btn" >
-                    </div>
-                </div>
-                <div class="social-media">
-                    <div class="icons">
-                        <a href="#"><i class='bx bxl-discord'></i></a>
-                        <a href="#"><i class='bx bxl-linkedin' ></i></a>
-                        <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
-                        <a href="#"><i class='bx bxl-github' ></i></a>
-                        <a href="#"><i class='bx bxl-youtube' ></i></a>
-                        <a href="#"><i class='bx bxl-twitter' ></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="contact-frame">
-                <div class="frame2"></div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="content">
-            <div class="left">
-                <div class="head">
-                    <div class="title">
-                        <div class="logo"></div>
-                        <h2>NoERROR</h2>
-                    </div>
-                    <div class="underline"></div>
-                </div>
-                <p>Want epic websites , Discord Bots or custom projects? Contact NoError Studios which will provide you with well developed custom projects!
+            <div class="policies col-sm-12 col-lg-4">
+                <p><a href="#">Privacy Policy</a></p>
+                <p><a href="#">Terms of Service</a></p>
+                <p><a href="">FAQs</a></p>
+                <p>
+                    <a href="https://discord.gg/PXRbkYXrP8" target="_blank"><i
+                            class="footer-icons fa-brands fa-discord fa-xl"></i></a>
+                    <a href="https://www.linkedin.com/company/noerror-studio" target="_blank"><i
+                            class="footer-icons fa-brands fa-linkedin fa-xl"></i></a>
+                    <a href="https://github.com/noerrorstudio" target="_blank"><i
+                            class="footer-icons fa-brands fa-github fa-xl"></i></a>
+                    <a href="https://www.youtube.com/c/NoErrorStudios" target="_blank"><i
+                            class="footer-icons fa-brands fa-youtube fa-xl"></i></a>
+                    <a href="https://twitter.com/NoErrorStudio" target="_blank"><i
+                            class="footer-icons fa-brands fa-twitter fa-xl"></i></a>
                 </p>
-                <div class="bottom">
-                    <i class='bx bx-copyright' ></i>
-                    <span>2023 Developed by NoError. All rights reserved.</span>
-                </div>
-            </div>
-            <div class="right">
-                <div class="links">
-                    <a href="#">Privacy policy</a>
-                    <a href="#">Terms of service</a>
-                    <a href="#">FAQ</a>
-                </div>
-                <div class="icons">
-                    <a href="#"><i class='bx bxl-discord'></i></a>
-                    <a href="#"><i class='bx bxl-linkedin' ></i></a>
-                    <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
-                    <a href="#"><i class='bx bxl-github' ></i></a>
-                    <a href="#"><i class='bx bxl-youtube' ></i></a>
-                    <a href="#"><i class='bx bxl-twitter' ></i></a>
-                </div>
             </div>
         </div>
-    </footer>
+    </div>
 
-<script src="assets/js/script.js"></script>
-<script src="assets/js/particles.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="JavaScript/particles.js"></script>
+    <script src="JavaScript/app.js"></script>
+    <script src="JavaScript/fade-animation.js"></script>
 </body>
+
 </html>
